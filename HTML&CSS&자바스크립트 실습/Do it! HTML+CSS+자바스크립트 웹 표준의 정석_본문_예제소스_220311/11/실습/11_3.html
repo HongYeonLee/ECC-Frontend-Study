@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                border: 1px solid transparent;
+                animation-name: shape;
+                animation-duration: 3s;
+            }
+
+            @keyframes shape {
+                from { 
+                    border: 1px solid transparent;
+                    background-color: orange;
+                }
+                to{
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "box"></div>
+    </body>
+</html>

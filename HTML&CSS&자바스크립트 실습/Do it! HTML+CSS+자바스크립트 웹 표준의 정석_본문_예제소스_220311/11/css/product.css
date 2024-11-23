@@ -14,10 +14,33 @@ h1 {
   padding: 0;
   margin: 10px;
   overflow: hidden;
+  position:relative
 }
 .prod-list img {
   margin:0;
   padding:0;
   float:left;
   z-index:5;
-} 
+}
+
+.prod-list .caption{
+  position: absolute; /* 이거 쓸려면 부모 요소에 position:relative 있어야함 */
+  top: 200px;
+  width: 300px;
+  height: 200px;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.6); /* 불투명도 60퍼 */
+  opacity: 0; /* 화면에서 안보임 */
+  transition: all 0.6s ease-in-out;
+  z-index: 10; /* 레이어 순서, 제일 앞에 오게 */
+}
+
+.prod-list li:hover .caption{
+  opacity: 1; /* 화면에서 보임 */
+  transform: translateY(-200px) /* 위쪽으로 200px */
+}
+
+.prod-list .caption h2, .prod-list, caption p{
+  color: #fff;
+  text-align: center;
+}
