@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <style>
+        .date{
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id = "date">2024년 11월 23일</p>
+    <p>위 텍스트를 클릭 해보세요</p>
+    <script>
+        var heading = document.querySelector("#date");    
+        heading.onclick = function(){
+            heading.style.color = "orange";
+        }    
+    </script>
+</body>
+</html>
