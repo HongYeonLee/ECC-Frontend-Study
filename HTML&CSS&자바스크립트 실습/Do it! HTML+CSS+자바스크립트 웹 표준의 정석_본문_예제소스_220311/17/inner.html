@@ -8,17 +8,41 @@
 <body>
 	<button onclick="inntext()">innerText로 표시하기</button>
 	<button onclick="innhtml()">innerHTML로 표시하기</button>
-	<h1>현재 시각: </h1>
+	<h1>현재 요일: </h1>
 	<div id="current"></div>
 	
 	<script>
 		var now = new Date();
+		var day = now.getDay();
+		switch(day){
+			case 0:
+				day = "일요일";
+				break;
+			case 1:
+				day = "월요일";
+				break;
+			case 2:
+				day = "화요일";
+				break;
+			case 3:
+				day = "수요일";
+				break;
+			case 4:
+				day = "목요일";
+				break;
+			case 5:
+				day = "금요일";
+				break;
+			case 6:
+				day = "토요일";
+				break;
+		}
 
 		function inntext(){
-			document.getElementById("current").innerText = now;
+			document.getElementById("current").innerText = "토요일";
 		}
 		function innhtml() {
-			document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+			document.getElementById("current").innerHTML = "<em>" + day + "</em>";
 		}
 	</script>
 </body>
