@@ -14,7 +14,31 @@
 <body>
 	<script>
 		var now = new Date();
-		document.write("현재 시각은 " + now.toLocaleString()) ;	// 로컬 형식으로 표시하기
+		var day = now.getDay();
+		switch(day){
+			case 0:
+				day = "일요일";
+				break;
+			case 1:
+				day = "월요일";
+				break;
+			case 2:
+				day = "화요일";
+				break;
+			case 3:
+				day = "수요일";
+				break;
+			case 4:
+				day = "목요일";
+				break;
+			case 5:
+				day = "금요일";
+				break;
+			case 6:
+				day = "토요일";
+				break;
+		}
+		document.write("현재 요일은 " + day);
 	</script>
 </body>
 </html>
