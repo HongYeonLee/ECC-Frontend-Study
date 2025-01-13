@@ -8,6 +8,9 @@ import Library from './chapter_03/Library';
 import Clock from './chapter_04/Clock';
 import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
+import SignUp from './chapter_11/SignUp';
+import Calculator from './chapter_12/Calculator';
+import ProfileCard from './chapter_13/ProfileCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -30,9 +33,27 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   </React.StrictMode>
 // );
 
+// root.render(
+//   <React.StrictMode>
+//     <NotificationList />
+//   </React.StrictMode>
+// )
+
+// root.render(
+//   <React.StrictMode>
+//     <SignUp />
+//   </React.StrictMode>
+// )
+
+// root.render(
+//   <React.StrictMode>
+//     <Calculator />
+//   </React.StrictMode>
+// )
+
 root.render(
   <React.StrictMode>
-    <NotificationList />
+    <ProfileCard />
   </React.StrictMode>
 )
 
